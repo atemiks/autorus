@@ -1,0 +1,51 @@
+.header-box {
+    position: fixed;
+    z-index: 99;
+    top: 0;
+    left: 0;
+    right: 0;
+    background: $white;
+    box-shadow: 0 3px 50px rgba(34, 38, 40, 0.15);
+}
+
+.header-statusbar {
+    background-color: $primary;
+    color: $white;
+    font-size: 13px;
+    line-height: 15px;
+    @include media-breakpoint-up(xl) {
+        font-size: 14px;
+        line-height: 15px;
+    }
+    @include media-breakpoint-up(xxl) {
+        font-size: 15px;
+        line-height: 20px;
+    }
+
+    a {
+        color: currentColor;
+        text-decoration: none;
+    }
+}
+
+.header-main {
+    padding-top: 10px;
+    padding-bottom: 10px;
+    @include media-breakpoint-up(lg) {
+        padding-top: 0;
+        padding-bottom: 0;
+    }
+}
+
+@import 'header-offcanvas';
+@import 'header-contact';
+@import 'header-whatsapp';
+
+@import 'header-logo';
+@import 'header-catalog';
+@import 'header-search';
+@import 'header-account';
+
+@import 'header-location';
+@import 'header-nav';
+@import 'header-master';

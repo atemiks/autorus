@@ -1,0 +1,35 @@
+.header-search-toggle {
+    width: 45px;
+    height: 45px;
+    border: none;
+    border-radius: $g-radius;
+    background: $danger;
+    color: $white;
+}
+
+.header-search-block {
+    .form-search {
+        width: 100%;
+    }
+    
+    .form-search-input,
+    .form-search-button {
+        height: 45px;
+        @include media-breakpoint-up(xl) {
+            height: 50px;
+        }
+        @include media-breakpoint-up(xxl) {
+            height: 60px;
+        }
+    }
+
+    .form-search-button {
+        width: 45px;
+        @include media-breakpoint-up(xl) {
+            width: 50px;
+        }
+        @include media-breakpoint-up(xxl) {
+            width: 60px;
+        }
+    }
+}

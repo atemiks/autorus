@@ -1,0 +1,14 @@
+.footer-about-block {
+    margin-bottom: 30px;
+    @include media-breakpoint-up(sm) {
+        max-width: 220px;
+        margin-bottom: 10px;
+    }
+
+    p {
+        margin: 0;
+        + p {
+            margin-top: 20px;
+        }
+    }
+}

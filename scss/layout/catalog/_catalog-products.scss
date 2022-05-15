@@ -1,0 +1,72 @@
+.catalog-header {
+    margin-bottom: 10px;
+    padding: 20px 70px 20px 20px;
+    background: $primary;
+    color: $white;
+    font-size: 12px;
+    line-height: 20px;
+    @include media-breakpoint-up(lg) {
+        padding-left: 20px;
+        padding-right: 75px;
+    }
+    @include media-breakpoint-up(xl) {
+        font-size: 13px;
+    }
+    @include media-breakpoint-up(xxl) {
+        padding: 30px 130px 30px 40px;
+        font-size: 15px;
+    }
+}
+
+.catalog-header-thumbnail-container {
+    flex: 0 0 50px;
+    width: 50px;
+    @include media-breakpoint-up(xl) {
+        flex: 0 0 60px;
+        width: 60px;
+    }
+}
+
+.catalog-header-vendor-code-container {
+    flex: 0 0 85px;
+    width: 85px;
+    @include media-breakpoint-up(xl) {
+        flex: 0 0 100px;
+        width: 100px;
+    }
+}
+
+.catalog-header-code-container {
+    flex: 0 0 90px;
+    width: 90px;
+    @include media-breakpoint-up(xl) {
+        flex: 0 0 95px;
+        width: 95px;
+    }
+}
+
+.catalog-header-status-container {
+    flex: 0 0 140px;
+    width: 140px;
+    @include media-breakpoint-up(xl) {
+        flex: 0 0 135px;
+        width: 135px;
+    }
+}
+
+.catalog-header-price-container {
+    flex: 0 0 105px;
+    width: 105px;
+    @include media-breakpoint-up(xl) {
+        flex: 0 0 130px;
+        width: 130px;
+    }
+}
+
+.catalog-grid {
+    margin-bottom: 15px;
+
+    .catalog-item {
+        margin-bottom: 10px;
+    }
+}

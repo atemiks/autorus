@@ -1,0 +1,22 @@
+.product-badges-block {
+    pointer-events: none;
+    position: absolute;
+    z-index: 9;
+    top: 10px;
+    right: 0;
+}
+
+.product-badge {
+    padding: 5px 11px 5px 5px;
+    clip-path: polygon(0 0, 100% 0, 100% calc(100% - 8px), calc(100% - 8px) 100%, 0 100%);
+    font-size: 11px;
+    line-height: 1;
+    @include media-breakpoint-up(xxl) {
+        font-size: 15px;
+    }
+}
+
+.product-badge-danger {
+    background: $danger;
+    color: $white;
+}

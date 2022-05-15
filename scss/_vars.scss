@@ -1,0 +1,28 @@
+$grid-breakpoints: (
+	xs: 0,
+	sm: 480px,
+	md: 750px,
+	lg: 970px,
+	xl: 1200px,
+	xxl: 1680px
+);
+
+$f-default: "Avenir Next";
+
+// colors
+$default: #313131;
+$default-heading: #000000;
+$black: #000;
+$white: #fff;
+$primary-900: #4b79af;
+$primary: #5b93d4;
+$danger: #cb2f30;
+$gray: #a4b3b7;
+
+$gray-100: #e7e7e9;
+$gray-200: #ebebeb;
+$gray-900: #9a9ea2;
+
+$b-whatsapp: #35aa4d;
+
+$g-radius: 5px;

@@ -1,0 +1,16 @@
+.footer-logo-link {
+    display: block;
+    margin-bottom: 15px;
+    @include media-breakpoint-up(sm) {
+        margin-bottom: 30px;
+    }
+
+    .footer-logo-media {
+        width: 119px;
+        height: 28px;
+        @include media-breakpoint-up(sm) {
+            width: 152px;
+            height: 36px;
+        }
+    }
+}

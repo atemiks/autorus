@@ -1,0 +1,29 @@
+.header-account-link {
+    position: relative;
+    width: 40px;
+    height: 40px;
+    margin: 0 10px 0 0;
+    border: 2px solid $gray;
+    border-radius: 50%;
+    text-decoration: none;
+    @include media-breakpoint-up(xxl) {
+        width: 60px;
+        height: 60px;
+    }
+
+    .header-account-media {
+        width: 21px;
+        height: 20px;
+        color: $primary;
+        @include media-breakpoint-up(xxl) {
+            width: 32px;
+            height: 30px;
+        }
+    }
+    
+    .header-account-badge {
+        position: absolute;
+        top: 0;
+        left: 80%;
+    }
+}

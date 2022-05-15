@@ -1,0 +1,38 @@
+#modalSearchByPhoto {
+    .modal-dialog {
+        max-width: 1150px;
+    }
+
+    .modal-content {
+        @include media-breakpoint-up(md) {
+            padding: 0;
+        }
+    }
+
+    .modal-typography-container {
+        @include media-breakpoint-up(md) {
+            padding: 30px 30px 35px;
+        }
+        @include media-breakpoint-up(xl) {
+            padding: 30px 45px 45px;
+        }
+        @include media-breakpoint-up(xxl) {
+            padding: 35px 55px 55px;
+        }
+    }
+
+    .modal-thumbnail-container {
+        padding-left: 15px;
+        padding-right: 15px;
+        background: $primary;
+        @include media-breakpoint-up(xxl) {
+            padding-left: 20px;
+            padding-right: 20px;
+        }
+    }
+
+
+    .modal-header {
+        margin-bottom: 12px;
+    }
+}

@@ -1,0 +1,186 @@
+.form-control {
+    height: 50px;
+    border: 2px solid $gray;
+    border-radius: $g-radius;
+    padding-left: 15px;
+    padding-right: 15px;
+    font-size: 16px;
+}
+
+textarea.form-control {
+    resize: none;
+    height: 90px;
+}
+
+.form-select {
+    position: relative;
+    width: auto;
+    padding: 0;
+    border: none;
+    border-bottom: 4px solid $danger;
+    border-radius: 0;
+    background: none;
+    font-size: 16px;
+    font-weight: 700;
+
+    &::after {
+        display: inline-block;
+        width: 5px;
+        height: 5px;
+        background: $danger;
+        content: '';
+    }
+}
+
+
+.custom-control-inline {
+    margin-right: 25px;
+    @include media-breakpoint-up(md) {
+        margin-right: 15px;
+    }
+    @include media-breakpoint-up(xxl) {
+        margin-right: 25px;
+    }
+}
+
+// custom checkbox
+.custom-checkbox {
+    position: relative;
+    display: flex;
+    align-items: center;
+    min-height: 25px;
+    padding-left: 35px;
+    font-size: 13px;
+    font-weight: 600;
+    line-height: 15px;
+    @include media-breakpoint-up(md) {
+        font-size: 14px;
+    }
+    @include media-breakpoint-up(xxl) {
+        font-size: 15px;
+    }
+
+    .custom-control-input {
+        width: 25px;
+        height: 25px;
+
+        &:checked ~ .custom-control-label {
+            color: $black;
+
+            &::before {
+                border-color: $danger;
+                background: none;
+            }
+
+            &::after {
+                opacity: 1;
+                visibility: visible;
+                background: none;
+            }
+        }
+    }
+
+    .custom-control-label {
+        position: static;
+        min-height: auto;
+        color: $gray;
+
+        &::before,
+        &::after {
+            top: 0;
+            left: 0;
+            width: 25px;
+            height: 25px;
+            background: none;
+        }
+
+        &::before {
+            border: 2px solid $gray;
+            border-radius: $g-radius;
+        }
+
+        &::after {
+            opacity: 0;
+            visibility: hidden;
+            color: $danger;
+            font-family: 'icomoon';
+            line-height: 25px;
+            text-align: center;
+            content: '\e900';
+        }
+    }
+}
+
+// custom number
+.custom-number {
+    min-height: 40px;
+    padding: 0;
+
+    .custom-number-input {
+        width: 75px;
+        height: 40px;
+        border: 2px solid $gray;
+        border-radius: $g-radius;
+        font-size: 16px;
+        text-align: center;
+
+        &::-webkit-outer-spin-button,
+        &::-webkit-inner-spin-button {
+            -webkit-appearance: none;
+            margin: 0;
+        }
+
+        &[type=number] {
+            -moz-appearance: textfield;
+        }
+    }
+
+    .custom-number-button {
+        cursor: pointer;
+        width: 40px;
+        height: 40px;
+        margin: 0;
+        padding: 0;
+        border: none;
+        border-radius: 0;
+        background: none;
+        color: $danger;
+    }
+}
+
+// custom file
+.custom-file {
+    height: 60px;
+
+    .custom-file-input {
+        height: inherit;
+    }
+
+    .custom-file-label {
+        display: flex;
+        align-items: center;
+        height: inherit;
+        margin: 0;
+        padding: 0;
+        border: none;
+        border-radius: 0;
+        color: $primary;
+        font-size: 15px;
+        font-weight: 700;
+
+        &::before {
+            display: block;
+            flex: 0 0 16px;
+            width: 16px;
+            margin-right: 5px;
+            font-family: 'icomoon';
+            font-size: 16px;
+            line-height: 1;
+            content: '\f2c2';
+        }
+
+        &::after {
+            display: none;
+        }
+    }
+}

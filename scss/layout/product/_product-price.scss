@@ -1,0 +1,75 @@
+.product-price-block {
+    margin-bottom: 15px;
+    @include media-breakpoint-up(sm) {
+        margin-bottom: 10px;
+    }
+}
+
+.product-price {
+    font-size: 28px;
+    font-weight: 700;
+    line-height: 1;
+    @include media-breakpoint-up(lg) {
+        font-size: 32px;
+    }
+    @include media-breakpoint-up(xl) {
+        font-size: 38px;
+    }
+    @include media-breakpoint-up(xxl) {
+        font-size: 50px;
+    }
+}
+
+.product-old-price {
+    font-size: 15px;
+    font-weight: 600;
+    line-height: 20px;
+    text-decoration: line-through;
+    @include media-breakpoint-up(xl) {
+        font-size: 17px;
+    }
+    @include media-breakpoint-up(xxl) {
+        font-size: 20px;
+    }
+}
+
+.product-sale-price {
+    position: relative;
+    z-index: 1;
+    padding: 2px 5px;
+    border-radius: $g-radius;
+    background: $gray;
+    color: $white;
+    font-size: 12px;
+    line-height: 15px;
+    @include media-breakpoint-up(xl) {
+        font-size: 13px;
+    }
+    @include media-breakpoint-up(xl) {
+        font-size: 14px;
+    }
+
+    &::before {
+        position: absolute;
+        z-index: -1;
+        top: 50%;
+        left: 0;
+        width: 6px;
+        height: 6px;
+        transform: translate(-50%, -50%) rotate(45deg);
+        transform-origin: center center;
+        background: inherit;
+        content: '';
+    }
+}
+
+.product-sale-hint {
+    display: block;
+    margin: 5px 0 0;
+    font-size: 12px;
+    line-height: 15px;
+    @include media-breakpoint-up(xxl) {
+        font-size: 13px;
+        line-height: 20px;
+    }
+}

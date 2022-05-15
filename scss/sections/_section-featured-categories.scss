@@ -1,0 +1,93 @@
+.section-featured-categories {
+    margin-top: 40px;
+    margin-bottom: 20px;
+    @include media-breakpoint-up(sm) {
+        margin-top: 35px;
+        margin-bottom: 15px;
+    }
+    @include media-breakpoint-up(md) {
+        margin-top: 40px;
+        margin-bottom: 40px;
+    }
+    @include media-breakpoint-up(lg) {
+        margin-top: 55px;
+        margin-bottom: 55px;
+    }
+    @include media-breakpoint-up(xl) {
+        margin-top: 35px;
+        margin-bottom: 35px;
+    }
+
+    .section-header {
+        margin-bottom: 15px;
+        @include media-breakpoint-up(sm) {
+            margin-bottom: 20px;
+        }
+        @include media-breakpoint-up(xxl) {
+            margin-bottom: 30px;
+        }
+    }
+}
+
+.featured-typography-container {
+    margin-bottom: 15px;
+    @include media-breakpoint-up(sm) {
+        margin-bottom: 35px;
+    }
+    @include media-breakpoint-up(md) {
+        margin-bottom: 0;
+    }
+    @include media-breakpoint-up(xl) {
+        margin-top: 20px;
+    }
+}
+
+.featured-categories-list {
+    margin: 0;
+    font-weight: 600;
+    @include media-breakpoint-up(sm) {
+        columns: 2;
+        margin-bottom: 10px;
+    }
+    @include media-breakpoint-up(xl) {
+        font-size: 16px;
+        line-height: 20px;
+    }
+    @include media-breakpoint-up(xxl) {
+        font-size: 17px;
+        line-height: 20px;
+    }
+
+    li {
+        position: relative;
+        padding-left: 15px;
+        @include media-breakpoint-up(sm) {
+            padding-left: 25px;
+        }
+
+        &:not(:last-child) {
+            margin-bottom: 20px;
+        }
+
+        &::before {
+            position: absolute;
+            top: 50%;
+            left: 0;
+            transform: translateY(-50%);
+            width: 4px;
+            height: 4px;
+            border-radius: 50%;
+            background: $danger;
+            content: '';
+        }
+    }
+
+    a {
+        color: $dark;
+        text-decoration: none;
+
+        &:hover {
+            color: $danger;
+        }
+    }
+}

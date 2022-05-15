@@ -1,0 +1,71 @@
+.product-header {
+    position: relative;
+    z-index: 1;
+    margin-bottom: 15px;
+    @include media-breakpoint-up(md) {
+        margin-bottom: 10px;
+    }
+    @include media-breakpoint-up(lg) {
+        margin-bottom: 25px;
+    }
+    @include media-breakpoint-up(xl) {
+        margin-bottom: 20px;
+    }
+    @include media-breakpoint-up(xxl) {
+        margin-bottom: 25px;
+    }
+    
+    h1 {
+        @extend .title-h1;
+        margin: 0 0 8px;
+        @include media-breakpoint-up(md) {
+            margin-bottom: 5px;
+        }
+        @include media-breakpoint-up(lg) {
+            margin-bottom: 10px;
+        }
+        @include media-breakpoint-up(xl) {
+            font-size: 36px;
+            line-height: 40px;
+        }
+        @include media-breakpoint-up(xxl) {
+            font-size: 40px;
+            line-height: 45px;
+        }
+    }
+}
+
+.product-category {
+    margin-bottom: 5px;
+    font-size: 13px;
+    line-height: 15px;
+    @include media-breakpoint-up(lg) {
+        margin-bottom: 0;
+        font-size: 14px;
+        line-height: 20px;
+    }
+    @include media-breakpoint-up(xl) {
+        font-size: 15px;
+    }
+}
+
+.product-quality-status {
+    display: inline-block;
+    padding: 5px 9px;
+    border-radius: $g-radius;
+    background: $black;
+    color: $white;
+    font-size: 12px;
+    font-weight: 700;
+    line-height: 15px;
+    @include media-breakpoint-up(lg) {
+        font-size: 13px;
+        line-height: 20px;
+    }
+    @include media-breakpoint-up(xl) {
+        font-size: 14px;
+    }
+    @include media-breakpoint-up(xxl) {
+        font-size: 15px;
+    }
+}

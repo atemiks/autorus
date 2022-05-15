@@ -1,0 +1,61 @@
+.section-catalog {
+    position: relative;
+    z-index: 1;
+    border-bottom: 2px solid $white;
+
+    &::before {
+        @include media-breakpoint-up(lg) {
+            position: absolute;
+            z-index: -1;
+            top: 0;
+            right: 75%;
+            width: 25%;
+            height: 100%;
+            background: $white;
+            content: '';
+        }
+
+        /* hack for white background */ 
+        @media screen and (min-width: 1715px) {
+            right: calc(50% + 425px);
+            width: 100%;
+        }
+    }
+}
+
+.catalog-aside-container {
+    @include media-breakpoint-up(xl) {
+        padding-right: 35px;
+    }
+    @include media-breakpoint-up(xxl) {
+        padding-right: 50px;
+    }
+}
+
+.catalog-typography-container {
+    padding-top: 20px;
+    padding-bottom: 25px;
+    @include media-breakpoint-up(sm) {
+        padding-top: 20px;
+        padding-bottom: 35px;
+    }
+    @include media-breakpoint-up(md) {
+        padding-top: 25px;
+        padding-bottom: 35px;
+    }
+    @include media-breakpoint-up(lg) {
+        padding-top: 0;
+        padding-bottom: 40px;
+    }
+    @include media-breakpoint-up(xl) {
+        padding-left: 35px;
+    }
+    @include media-breakpoint-up(xxl) {
+        padding-left: 50px;
+    }
+}
+
+
+@import 'catalog-categories';
+@import 'catalog-sort';
+@import 'catalog-products';

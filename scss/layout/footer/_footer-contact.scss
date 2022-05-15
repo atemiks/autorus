@@ -1,0 +1,39 @@
+.footer-contact-block {
+    margin-bottom: 10px;
+    padding-top: 20px;
+    border-top: 2px solid $white;
+    @include media-breakpoint-up(sm) {
+        max-width: 160px;
+        margin-left: auto;
+        margin-right: auto;
+    }
+    @include media-breakpoint-up(lg) {
+        max-width: none;
+    }
+    @include media-breakpoint-up(xl) {
+        padding-top: 15px;
+    }
+}
+
+.footer-contact-list {
+    margin-top: 0;
+    margin-bottom: 0;
+    font-size: 16px;
+    font-weight: 600;
+    @include media-breakpoint-up(xl) {
+        font-size: 20px;
+        line-height: 30px;
+    }
+    @include media-breakpoint-up(xxl) {
+        font-size: 24px;
+    }
+}
+
+.footer-contact-link {
+    padding-top: 15px;
+    padding-bottom: 15px;
+    @include media-breakpoint-up(xl) {
+        padding-top: 10px;
+        padding-bottom: 10px;
+    }
+}

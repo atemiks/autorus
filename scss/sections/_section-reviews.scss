@@ -1,0 +1,20 @@
+.section-reviews {
+    margin-top: 40px;
+    margin-bottom: 30px;
+    @include media-breakpoint-up(sm) {
+        margin-top: 40px;
+        margin-bottom: 35px;
+    }
+    @include media-breakpoint-up(lg) {
+        margin-top: 55px;
+        margin-bottom: 55px;
+    }
+    @include media-breakpoint-up(xl) {
+        margin-top: 75px;
+        margin-bottom: 75px;
+    }
+    @include media-breakpoint-up(xxl) {
+        margin-top: 70px;
+        margin-bottom: 70px;
+    }
+}

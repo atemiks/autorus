@@ -1,0 +1,151 @@
+.section-contact {
+    padding: 25px 0 20px;
+    @include media-breakpoint-up(sm) {
+        padding-top: 35px;
+        padding-bottom: 10px;
+    }
+    @include media-breakpoint-up(md) {
+        padding-top: 25px;
+        padding-bottom: 25px;
+    }
+    @include media-breakpoint-up(lg) {
+        padding-top: 35px;
+        padding-bottom: 30px;
+    }
+    @include media-breakpoint-up(xl) {
+        padding-top: 20px;
+        padding-bottom: 15px;
+    }
+
+    a {
+        color: inherit;
+    }
+}
+
+.contact-phone-block {
+    max-width: 180px;
+    margin-bottom: 15px;
+    @include media-breakpoint-up(sm) {
+        margin-bottom: 5px;
+    }
+    @include media-breakpoint-up(lg) {
+        max-width: 200px;
+    }
+    @include media-breakpoint-up(xl) {
+        max-width: 240px;
+    }
+    @include media-breakpoint-up(xxl) {
+        max-width: 400px;
+    }
+
+    a {
+        font-size: 22px;
+        font-weight: 600;
+        text-decoration: none;
+        line-height: 25px;
+        @include media-breakpoint-up(lg) {
+            font-size: 25px;
+        }
+        @include media-breakpoint-up(xl) {
+            font-size: 30px;
+            line-height: 30px;
+        }
+        @include media-breakpoint-up(xxl) {
+            font-size: 50px;
+            line-height: 60px;
+        }
+    }
+
+    .contact-hint {
+        font-size: 12px;
+        @include media-breakpoint-up(xl) {
+            font-size: 15px;
+        }
+        @include media-breakpoint-up(xxl) {
+            font-size: 20px;
+        }
+    }
+}
+
+.contact-location-block {
+    max-width: 250px;
+    margin-bottom: 10px;
+    font-weight: 600;
+    @include media-breakpoint-up(sm) {
+        max-width: 200px;
+        margin-bottom: 5px;
+    }
+    @include media-breakpoint-up(lg) {
+        max-width: 180px;
+    }
+    @include media-breakpoint-up(xl) {
+        max-width: 220px;
+    }
+    @include media-breakpoint-up(xxl) {
+        max-width: 270px;
+    }
+
+    .contact-location-thumbnail {
+        flex: 0 0 29px;
+        width: 29px;
+        height: 35px;
+        margin-right: 20px;
+        @include media-breakpoint-up(sm) {
+            margin-right: 10px;
+        }
+        @include media-breakpoint-up(lg) {
+            flex: 0 0 38px;
+            width: 38px;
+            height: 47px;
+        }
+        @include media-breakpoint-up(xl) {
+            flex: 0 0 50px;
+            width: 50px;
+            height: 62px;
+        }
+        @include media-breakpoint-up(xxl) {
+            flex: 0 0 67px;
+            width: 67px;
+            height: 82px;
+        }
+    }
+
+    .contact-location-media {
+        width: inherit;
+        height: inherit;
+    }
+}
+
+
+.contact-whatsapp-block {
+    margin-bottom: 15px;
+    text-decoration: none;
+    @include media-breakpoint-up(sm) {
+        margin-bottom: 5px;
+    }
+
+    .contact-whatsapp-thumbnail {
+        flex: 0 0 45px;
+        width: 45px;
+        height: 45px;
+        border-radius: 50%;
+        background-color: $success;
+        @include media-breakpoint-up(xl) {
+            flex: 0 0 60px;
+            width: 60px;
+            height: 60px;
+        }
+        @include media-breakpoint-up(xxl) {
+            flex: 0 0 80px;
+            width: 80px;
+            height: 80px;
+        }
+    }
+
+    .contact-whatsapp-content {
+        margin-left: 10px;
+        @include media-breakpoint-up(xxl) {
+            margin-left: 20px;
+        }
+    }
+}

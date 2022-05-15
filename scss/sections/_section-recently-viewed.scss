@@ -1,0 +1,87 @@
+.section-recently-viewed {
+    margin-bottom: 40px;
+    padding-top: 35px;
+    padding-bottom: 0;
+    border-top: 2px solid $gray;
+    @include media-breakpoint-up(sm) {
+        margin-bottom: 45px;
+        padding-top: 45px;
+    }
+    @include media-breakpoint-up(md) {
+        margin-bottom: 35px;
+        padding-top: 40px;
+    }
+    @include media-breakpoint-up(lg) {
+        margin-bottom: 45px;
+    }
+    @include media-breakpoint-up(xl) {
+        margin-bottom: 55px;
+        padding-top: 35px;
+    }
+    @include media-breakpoint-up(xxl) {
+        margin-bottom: 90px;
+        padding-top: 55px;
+    }
+
+    .section-header {
+        margin-bottom: 20px;
+        @include media-breakpoint-up(sm) {
+            margin-bottom: 15px;
+        }
+        @include media-breakpoint-up(md) {
+            margin-bottom: 30px;
+        }
+        @include media-breakpoint-up(lg) {
+            margin-bottom: 25px;
+        }
+        @include media-breakpoint-up(xl) {
+            margin-bottom: 40px;
+        }
+    }
+}
+
+
+.swiper-recently-viewed {
+    margin-left: 20px;
+    margin-right: 20px;
+    @include media-breakpoint-up(md) {
+        margin-left: 25px;
+        margin-right: 25px;
+    }
+    @include media-breakpoint-up(xxl) {
+        margin-left: 0;
+        margin-right: 0;
+    }
+
+    .swiper-slide {
+        padding-left: 10px;
+        padding-right: 10px;
+        @include media-breakpoint-up(xxl) {
+            padding-left: 60px;
+            padding-right: 60px;
+        }
+    }
+
+    .swiper-button {
+        color: $gray;
+
+        &:hover {
+            color: $danger;
+        }
+
+        .swiper-button-media {
+            @include media-breakpoint-up(sm) {
+                width: 14px;
+                height: 24px;
+            }
+        }
+    }
+
+    .swiper-button-prev {
+        transform: translate(-75%, -50%);
+    }
+
+    .swiper-button-next {
+        transform: translate(75%, -50%);
+    }
+}

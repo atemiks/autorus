@@ -1,0 +1,27 @@
+.header-catalog-toggle {
+    min-height: 45px;
+    margin: 0;
+    padding: 0;
+    border: none;
+    border-radius: 0;
+    background: $danger;
+    border-radius: $g-radius;
+    padding: 12px 10px;
+    color: $white;
+    font-size: 13px;
+    font-weight: 700;
+    @include media-breakpoint-up(xl) {
+        min-height: 50px;
+        padding: 12px 18px;
+        font-size: 15px;
+    }
+    @include media-breakpoint-up(xxl) {
+        min-width: 245px;
+        min-height: 60px;
+        font-size: 17px;
+    }
+
+    .header-catalog-media {
+        margin-right: 15px;
+    }
+}

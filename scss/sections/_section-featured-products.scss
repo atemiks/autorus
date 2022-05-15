@@ -1,0 +1,108 @@
+.section-featured-products {
+    position: relative;
+    padding-top: 35px;
+    padding-bottom: 30px;
+    @include media-breakpoint-up(sm) {
+        padding-top: 35px;
+        padding-bottom: 40px;
+    }
+    @include media-breakpoint-up(md) {
+        padding-top: 35px;
+        padding-bottom: 25px;
+    }
+    @include media-breakpoint-up(lg) {
+        padding-top: 50px;
+        padding-bottom: 45px;
+    }
+    @include media-breakpoint-up(xl) {
+        padding-top: 45px;
+        padding-bottom: 50px;
+    }
+    @include media-breakpoint-up(xxl) {
+        padding-top: 55px;
+        padding-bottom: 40px;
+    }
+
+    .section-header {
+        margin-bottom: 10px;
+        @include media-breakpoint-up(sm) {
+            margin-bottom: 5px;
+        }
+        @include media-breakpoint-up(md) {
+            margin-bottom: 25px;
+        }
+        @include media-breakpoint-up(lg) {
+            margin-bottom: 15px;
+        }
+        @include media-breakpoint-up(xl) {
+            margin-bottom: 20px;
+        }
+    }
+}
+
+.featured-products-category-block {
+    margin-bottom: 20px;
+}
+
+.swiper-featured-products {
+    margin-bottom: 20px;
+    @include media-breakpoint-up(lg) {
+        margin-bottom: 25px;
+    }
+    @include media-breakpoint-up(xl) {
+        margin-bottom: 20px;
+    }
+    @include media-breakpoint-up(xxl) {
+        margin-left: -40px;
+        margin-right: -40px;
+    }
+
+    .swiper-slide {
+        @include media-breakpoint-up(xxl) {
+            padding-left: 40px;
+            padding-right: 40px;
+        }
+    }
+}
+
+.swiper-featured-products-navigation {
+    position: absolute;
+    z-index: 9;
+    top: 0;
+    right: 15px;
+}
+
+.swiper-featured-products-button-prev,
+.swiper-featured-products-button-next {
+    position: static;
+    width: 24px;
+    height: 24px;
+    color: $danger;
+    @include media-breakpoint-up(sm) {
+        width: 30px;
+        height: 15px;
+    }
+    @include media-breakpoint-up(xl) {
+        width: 40px;
+        height: 20px;
+    }
+
+    .swiper-button-media {
+        width: inherit;
+        height: inherit;
+    }
+}
+
+.swiper-featured-products-button-prev {
+    margin-right: 8px;
+    @include media-breakpoint-up(xl) {
+        margin-right: 10px;
+    }
+}
+
+.swiper-featured-products-button-next {
+    margin-left: 8px;
+    @include media-breakpoint-up(xl) {
+        margin-left: 10px;
+    }
+}

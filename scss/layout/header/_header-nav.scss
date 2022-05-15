@@ -1,0 +1,28 @@
+.header-nav-toggle {
+    width: 90px;
+    height: 50px;
+    margin: 0;
+    padding: 0;
+    border: none;
+    border-radius: 0;
+    background: none;
+    color: currentColor;
+    @include media-breakpoint-up(lg) {
+        width: 140px;
+    }
+    @include media-breakpoint-up(xl) {
+        width: 175px;
+        height: 60px;
+    }
+}
+
+.header-nav-list {
+    margin-top: 0;
+    margin-bottom: 0;
+}
+
+.header-nav-item {
+    &:not(:last-child) {
+        margin-right: 40px;
+    }
+}
